@@ -1,0 +1,24 @@
+.navbarRoutes {
+  color: var(--light-on-background-high-contrast, var(--background, #212121));
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* label/x-small-semibold */
+  font-family: Proxima Nova A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+.text {
+  color: var(--light-on-background-high-contrast, var(--background, #212121));
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* body/x-small-semibold */
+  font-family: Proxima Nova A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}

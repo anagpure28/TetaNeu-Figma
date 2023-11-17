@@ -1,0 +1,20 @@
+.boldText {
+  color: #2a2a2a;
+  font-family: Proxima Nova A;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px; /* 160% */
+  text-transform: capitalize;
+  text-align: left;
+}
+
+span {
+  color: #ff0096;
+  font-family: Proxima Nova A;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px;
+  text-transform: capitalize;
+}
