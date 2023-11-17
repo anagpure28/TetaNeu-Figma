@@ -30,6 +30,7 @@ import location from "../../Images/location.png";
 import notification from "../../Images/notification.png";
 import User from "../../Images/User.png";
 import cart from "../../Images/cart.png";
+import Logo1 from "../../Images/Logo1.png";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -64,27 +65,17 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
+          <img src={Logo1} alt="" />
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", md: "flex" }} ml={4}>
             <DesktopNav />
           </Flex>
         </Flex>
 
         <Stack flex={{ sm: "column", md: "row" }} justify={"flex-end"} direction={"row"}>
-          {/* <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-            Sign In
-          </Button> */}
-          {/* <input type="search" placeholder="Search Tata Neu" /> */}
           <InputGroup
+            w={{sm: 170, md: 258, lg: 258}}
             style={{
-              width: "258px",
               border: "none",
               borderRadius: "4px",
               background:
@@ -103,20 +94,20 @@ export default function Navbar() {
           </InputGroup>
           <Stack
             flex={{ base: 0, md: 0 }}
+            display={{sm: "none", md: "none", lg: "flex"}}
             alignItems={"center"}
             direction={"row"}
-            mr={"24px"}
+            mr={{sm: 5}}
           >
             <Text className="text">122018</Text>
             <img src={location} alt="location" style={{marginRight: "24px"}} />
           </Stack>
           <Stack
-            flex={{ sm: "row", md: "row" }}
-            // display={{sm: "none", md:"inline-block"}}
+            flex={{ sm: "none", md: "none", lg: "row" }}
+            display={{sm: "none", md: "none", lg: "flex"}}
             justifyContent={"space-between"}
             alignItems={"center"}
             direction={"row"}
-            border={"1px solid red"}
           >
             <img src={cart} alt={cart} style={{marginRight: "24px"}} />
             <img src={notification} alt={notification} style={{marginRight: "24px"}} />
@@ -147,8 +138,6 @@ const DesktopNav = () => {
                 as="a"
                 px={2}
                 href={navItem.href ?? "#"}
-                fontSize={"sm"}
-                fontWeight={500}
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
