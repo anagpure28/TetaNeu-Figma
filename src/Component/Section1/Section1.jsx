@@ -74,15 +74,6 @@ const Section1 = () => {
           {/* </Container> */}
           <button className="applyButton">APPLY NOW</button>
         </Stack>
-        {/* <Stack
-          height={{ sm: "auto", md: "auto", lg: "100%" }}
-          w={{ sm: "auto", md: "auto", lg: "100%" }}
-          style={{border: "1px solid black"}}
-          mt={'41px'}
-          // className="bg"
-        >
-          <img src={father} alt="" height={"90%"}/>
-        </Stack> */}
         <Flex justifyContent={"end"} mr={"80px"} mt={41}>
           <Image
             rounded={"md"}

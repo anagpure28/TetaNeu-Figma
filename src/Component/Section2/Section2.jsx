@@ -49,7 +49,7 @@ const features = [
 
 const Section2 = () => {
   return (
-    <Container maxW={"100%"} py={12}>
+    <Container maxW={"100%"} mb={20}>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }} spacing={10}>
         <Box justifyContent={"end"} mt={41}>
           <div style={{display: "flex", justifyContent: "flex-start", alignItems: "center",marginLeft: "80px"}}>
