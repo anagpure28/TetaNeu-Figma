@@ -5,6 +5,7 @@ import Section2 from '../Component/Section2/Section2'
 import SubSection from '../Component/SubSection/SubSection'
 import Section8 from '../Component/Section8/Section8'
 import SubSection2 from '../Component/SubSection/SubSection2'
+import Section7 from '../Component/Section7/Section7'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <SubSection />
       <SubSection2 />
       <Section3 />
+      <Section7 />
       <Section8 />
     </div>
   )

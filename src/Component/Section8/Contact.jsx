@@ -16,7 +16,7 @@ export default function Contact() {
         You can see our detailed F&Q sessions if you have more quiries. Also we are always a single call away for all your special asks...
         </Text>
         <Stack direction={{ base: 'column', md: 'row' }}>
-          <button className="applyButton">
+          <button className="applyButton4">
            CONTACT US
           </button>
         </Stack>
