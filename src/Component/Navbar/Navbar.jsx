@@ -49,6 +49,8 @@ export default function Navbar() {
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        zIndex={100}
+        position={"sticky"}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -74,7 +76,8 @@ export default function Navbar() {
 
         <Stack flex={{ sm: "column", md: "row" }} justify={"flex-end"} direction={"row"}>
           <InputGroup
-            w={{sm: 170, md: 258, lg: 258}}
+            w={{sm: "120px", md: "258px", lg: "258px"}}
+            display={{base: "none", md: "inline"}}
             style={{
               border: "none",
               borderRadius: "4px",
@@ -93,8 +96,8 @@ export default function Navbar() {
             />
           </InputGroup>
           <Stack
-            flex={{ base: 0, md: 0 }}
-            display={{sm: "none", md: "none", lg: "flex"}}
+            flex={{ base: "none", md: 0 }}
+            display={{ base: "flex", sm: "none", md: "none", lg: "flex"}}
             alignItems={"center"}
             direction={"row"}
             mr={{sm: 5}}
@@ -103,8 +106,8 @@ export default function Navbar() {
             <img src={location} alt="location" style={{marginRight: "24px"}} />
           </Stack>
           <Stack
-            flex={{ sm: "none", md: "none", lg: "row" }}
-            display={{sm: "none", md: "none", lg: "flex"}}
+            flex={{ base: "none", sm: "none", md: "none", lg: "row" }}
+            display={{ base: "none",sm: "none", md: "none", lg: "flex"}}
             justifyContent={"space-between"}
             alignItems={"center"}
             direction={"row"}

@@ -1,0 +1,29 @@
+.loanText {
+  color: #2a2a2a;
+  text-align: center;
+  font-family: Proxima Nova A;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.8%; /* 60.632px */
+  text-transform: capitalize;
+}
+
+.title {
+  color: #2a2a2a;
+  font-family: Proxima Nova A;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.des {
+  color: #777479;
+  font-family: Proxima Nova A;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

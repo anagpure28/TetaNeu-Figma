@@ -1,41 +1,99 @@
-import React from 'react';
+import React from "react";
 import {
-    Container,
-    SimpleGrid,
-    Image,
-    Flex,
-    Heading,
-    Text,
-    Stack,
-    StackDivider,
-    Icon,
-    useColorModeValue,
-  } from '@chakra-ui/react';
-  import "./Section1.css";
-  import father from "../../Images/father.png"
-//   import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from 'react-icons/io5';
+  Container,
+  SimpleGrid,
+  Image,
+  Flex,
+  Heading,
+  Text,
+  Stack,
+  StackDivider,
+  Icon,
+  useColorModeValue,
+  HStack,
+  VStack,
+  Box,
+  Avatar,
+  Button,
+} from "@chakra-ui/react";
+import "./Section1.css";
+import father from "../../Images/father.png";
+import { CheckIcon } from "@chakra-ui/icons";
+import credit from "../../Images/credit.png";
+import quick from "../../Images/quick.png";
+import lowest from "../../Images/lowest.png";
+import minimal from "../../Images/minimal.png";
+
+const features = [
+  {
+    id: 1,
+    icons: credit,
+    title: "Avail Zero",
+    des: "Processing Fee",
+  },
+  {
+    id: 2,
+    icons: quick,
+    title: "Quick",
+    des: "Personal Loan",
+  },
+  {
+    id: 3,
+    icons: lowest,
+    title: "Lowest",
+    des: "Interest Rates",
+  },
+  {
+    id: 4,
+    icons: minimal,
+    title: "Miniamal",
+    des: "Documentation",
+  },
+];
 
 const Section1 = () => {
   return (
-    <Container maxW={'100%'} style={{border: "2px solid red"}}>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={2} style={{margin: "80px 80px 0px", height: "429px"}}>
-        <Stack style={{border: "1px solid red" }}>
-          {/* <div style={{border: "1px solid blue"}}> */}
-            <Text className="boldText">Turn Dreams Into Reality With <span>Personal Loans</span></Text>
-          {/* </div> */}
+    <Container maxW={"100%"} m={{ sm: "20px", lg: "0px 0px 70px" }}>
+      <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }}>
+        <Stack spacing={4} ml={{ lg: "80px" }}>
+          <Text className="boldText" fontSize={{  md: 60, lg: 60 }}>
+            Turn Dreams Into Reality With <span>Personal Loans</span>
+          </Text>
+          {/* <Container maxW={"100%"} mt={5}> */}
+              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} mt={30} className="gridBox">
+                {features.map((feature) => (
+                  <HStack key={feature.id} align={"top"}>
+                    <Avatar src={feature.icons} />
+                    <Stack direction={"column"} spacing={0} fontSize={"sm"}>
+                      <Text className="flexText">{feature.title}</Text>
+                      <Text className="flexDes">{feature.des}</Text>
+                    </Stack>
+                  </HStack>
+                ))}
+              </SimpleGrid>
+          {/* </Container> */}
+          <button className="applyButton">APPLY NOW</button>
         </Stack>
-        <Flex>
+        {/* <Stack
+          height={{ sm: "auto", md: "auto", lg: "100%" }}
+          w={{ sm: "auto", md: "auto", lg: "100%" }}
+          style={{border: "1px solid black"}}
+          mt={'41px'}
+          // className="bg"
+        >
+          <img src={father} alt="" height={"90%"}/>
+        </Stack> */}
+        <Flex justifyContent={"end"} mr={"80px"} mt={41}>
           <Image
-            alt={'feature image'}
-            src={
-              father
-            }
-            objectFit={'cover'}
+            rounded={"md"}
+            alt={"feature image"}
+            src={father}
+            objectFit={"cover"}
           />
         </Flex>
       </SimpleGrid>
     </Container>
-  )
-}
+  );
+};
 
-export default Section1
+export default Section1;
