@@ -36,21 +36,19 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box position={"fixed"} width={"100%"} zIndex={4} top={0} >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"90px"}
-        // py={{ base: 2 }}
-        // px={{ base: 4 }}
         ml={"32px"}
         mr={"32px"}
+        // ml={{base: 0, md: 32, lg: 32}}
+        // mr={{base: 0, md: 32, lg: 32}}
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
-        zIndex={100}
-        position={"sticky"}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -98,7 +96,7 @@ export default function Navbar() {
           <Stack
             flex={{ base: "none", md: 0 }}
             display={{ base: "flex", sm: "none", md: "none", lg: "flex"}}
-            alignItems={"center"}
+            alignItems={{base: "center"}}
             direction={"row"}
             mr={{sm: 5}}
           >
@@ -132,7 +130,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4} w={"30%"}>
+    <Stack direction={"row"} spacing={4} w={"30%"} >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>

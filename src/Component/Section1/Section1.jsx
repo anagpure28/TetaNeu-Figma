@@ -53,14 +53,14 @@ const features = [
 
 const Section1 = () => {
   return (
-    <Container maxW={"100%"} m={{ sm: "20px", lg: "0px 0px 70px" }}>
+    <Container maxW={"100%"} m={{ base: "100px 0 0 0", lg: "100px 0px 70px" }}>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }}>
         <Stack spacing={4} ml={{ lg: "80px" }}>
-          <Text className="boldText" fontSize={{  md: 60, lg: 60 }}>
-            Turn Dreams Into Reality With <span>Personal Loans</span>
+          <Text className="boldText" fontSize={{ md: 60, lg: 60 }}>
+            Turn Dreams Into Reality With <span className="span1">Personal Loans</span>
           </Text>
           {/* <Container maxW={"100%"} mt={5}> */}
-              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} mt={30} className="gridBox">
+              <SimpleGrid m={{base: "auto", md: "0px"}} columns={{ base: 1, md: 2 }} spacing={10} mt={30} className="gridBox">
                 {features.map((feature) => (
                   <HStack key={feature.id} align={"top"}>
                     <Avatar src={feature.icons} />

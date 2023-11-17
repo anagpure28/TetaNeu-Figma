@@ -27,3 +27,34 @@
   font-weight: 500;
   line-height: normal;
 }
+
+.span2 {
+  color: var(--1, #8800ec);
+  font-family: Proxima Nova A;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heading {
+  color: #000;
+  text-align: center;
+  font-family: Proxima Nova A;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.8%; /* 33.072px */
+  text-transform: capitalize;
+}
+
+.partner {
+  color: #2a2a2a;
+  font-family: Proxima Nova A;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.8%; /* 52.364px */
+  text-transform: capitalize;
+  margin-top: 20px;
+}

@@ -28,22 +28,22 @@ const features = [
   {
     id: 1,
     title: 'Interest Rate',
-    text: `Usually 10.49% p.a. onwards: some PSUs may offer lower rates`,
+    text: <Text className="des">Usually <span className="span2">10.49% p.a.</span> onwards: some PSUs may offer lower rates</Text>
   },
   {
     id: 2,
     title: 'Loan Amount',
-    text: `Can go up to Rs 40 lakh: some lenders may offer higher loan amount`,
+    text: <Text className="des">Can go up to <span className="span2">Rs 40 lakh:</span> some lenders may offer higher loan amount</Text>,
   },
   {
     id: 3,
     title: 'Processing Fees',
-    text: `0.5% to 4% of loan amount (may vary across lenders)`,
+    text: <Text className="des"><span className="span2">0.5% to 4%</span> of loan amount (may vary across lenders)</Text>,
   },
   {
     id: 4,
     title: 'Tenure',
-    text: `Up to 5 years (some lenders offer repayment period till 8 year)`,
+    text: <Text className="des">Up to <span className="span2">5 years</span> (some lenders offer repayment period till 8 year)</Text>,
   },
 ]
 
@@ -74,7 +74,7 @@ const Section2 = () => {
               </Box>
               <VStack align={'start'}>
                 <Text className="title">{feature.title}</Text>
-                <Text className="des">{feature.text}</Text>
+                {feature.text}
               </VStack>
             </HStack>
           ))}
