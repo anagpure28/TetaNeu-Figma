@@ -41,10 +41,10 @@ export default function Navbar() {
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"90px"}
-        ml={"32px"}
-        mr={"32px"}
-        // ml={{base: 0, md: 32, lg: 32}}
-        // mr={{base: 0, md: 32, lg: 32}}
+        // ml={"32px"}
+        // mr={"32px"}
+        ml={{base: -32, md: 22, lg: 12}}
+        mr={{base: -32, md: 22, lg: 12}}
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
