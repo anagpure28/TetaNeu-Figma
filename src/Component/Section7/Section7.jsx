@@ -21,7 +21,7 @@ export default function Section7() {
   return (
     <Container maxW={'8xl'}>
       <Stack
-        textAlign={"left"}
+        textAlign={{base: "center", md: "left"}}
         style={{marginLeft: "5%", marginRight: "5%"}}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
@@ -40,6 +40,7 @@ export default function Section7() {
           align={'center'}
           position={'relative'}
           w={'md'}
+          mt={{base: 10}}
           className='bgImage'
           >
             <Image src={boys} height='100%' />

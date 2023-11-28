@@ -56,7 +56,7 @@ const Section1 = () => {
     <Container maxW={"100%"} m={{ base: "100px 0 0 0", lg: "100px 0px 70px" }}>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }}>
         <Stack spacing={4} ml={{ lg: "80px" }}>
-          <Text className="boldText" fontSize={{ md: 60, lg: 60 }}>
+          <Text className="boldText" fontSize={{ md: 60, lg: 60 }} textAlign={{base: "center"}}>
             Turn Dreams Into Reality With <span className="span1">Personal Loans</span>
           </Text>
           {/* <Container maxW={"100%"} mt={5}> */}

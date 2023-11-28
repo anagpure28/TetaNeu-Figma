@@ -49,3 +49,14 @@
   line-height: 137.8%; /* 60.632px */
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 768px) {
+  .applyButton3{
+    margin: auto;
+    width: 40%;
+    margin-top: 10px;
+  }
+  .bgImage {
+    margin: auto;
+  }
+}

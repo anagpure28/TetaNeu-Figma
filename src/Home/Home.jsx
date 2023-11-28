@@ -8,6 +8,7 @@ import SubSection2 from '../Component/SubSection/SubSection2'
 import Section7 from '../Component/Section7/Section7'
 import Section5 from '../Component/Section5/Section5'
 import Section4 from '../Component/Section4/Section4'
+import Section6 from '../Component/Section6/Section6'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Section4 />
       <SubSection2 />
       <Section5 />
+      <Section6 />
       <Section7 />
       <Section8 />
     </div>

@@ -121,14 +121,14 @@
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 799px) {
+@media screen and (min-width: 300px) and (max-width: 799px) {
     .section4 {
         width: 100%;
         height: auto;
         /* border: 1px solid red; */
       }
     .flexSection1{
-        width: 60%;
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -155,6 +155,6 @@
         height: 100%;
     }
     .says{
-        font-size: 35px;
+        font-size: 2.5rem;
     }
 }

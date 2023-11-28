@@ -51,3 +51,14 @@
   font-weight: 700;
   line-height: normal;
 }
+
+@media screen and (max-width: 768px) {
+  .applyButton4{
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+  }
+  .clear{
+    text-align: center;
+  }
+}

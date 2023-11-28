@@ -65,7 +65,7 @@ const Section2 = () => {
           />
         </Box>
         <Stack spacing={4}>
-        <Container maxW={'6xl'} mt={40}>
+        <Container maxW={'6xl'} mt={{base: 10, md: 40}} className="rates">
         <SimpleGrid columns={{ base: 1, md: 1 }} spacing={10}>
           {features.map((feature) => (
             <HStack key={feature.id} align={'top'}>
